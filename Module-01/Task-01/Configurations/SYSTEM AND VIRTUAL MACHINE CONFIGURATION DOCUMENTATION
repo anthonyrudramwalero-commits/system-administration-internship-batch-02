@@ -1,0 +1,102 @@
+# SYSTEM AND VIRTUAL MACHINE CONFIGURATION DOCUMENTATION
+
+**Internship:** System Administration Internship – Batch 02  
+**Module:** Module 01  
+**Task:** Task 01  
+**Virtualisation Platform:** VMware Fusion 12
+
+## 1. HOST COMPUTER SPECIFICATIONS
+
+| Component | Configuration |
+|---|---|
+| Computer Manufacturer | Apple |
+| Computer Model | MacBook Pro 15-inch Retina (Mid 2012) |
+| Model Identifier | MacBookPro10,1 |
+| Processor Architecture | Intel |
+| Installed Memory (RAM) | 8 GB |
+| Host Operating System | macOS Monterey |
+| macOS Version | 12.7.6 |
+| Build Version | 21H1320 |
+
+## 2. VIRTUALISATION ENVIRONMENT
+
+| Component | Configuration |
+|---|---|
+| Virtualisation Software | VMware Fusion 12 |
+| Guest Operating System | Windows 10 (64-bit) |
+| Virtual Machine Name | Windows 10 |
+| Virtual Hard Disk | 60 GB |
+| Firmware Mode | Legacy BIOS |
+| Partition Table | MBR |
+
+## 3. VIRTUAL MACHINE HARDWARE CONFIGURATION
+
+| Component | Configuration |
+|---|---|
+| Allocated RAM | 4 GB (4096 MB) |
+| Virtual Processors | 2 |
+| Virtual Hard Disk | 60 GB |
+| Firmware | Legacy BIOS |
+| Partition Style | MBR |
+| Network Adapter | VMware Virtual Network Adapter |
+
+## 4. DISK PARTITION CONFIGURATION
+
+The virtual machine uses a 60 GB virtual hard disk with the MBR partitioning scheme.
+
+| Partition | Type | Size | Purpose |
+|---|---|---:|---|
+| Partition 1 | Primary | 21,000 MB | Windows operating system |
+| Partition 2 | Logical | 19,000 MB | Data storage |
+| Partition 3 | Logical | 19,000 MB | Additional data storage |
+| Remaining | Unallocated | Approximately 2,000 MB | Available space |
+
+The two logical drives are intended to be created inside an extended partition.
+
+**Note:** The partition layout must be verified against the final installed configuration. Windows 10 requires at least 32 GB of storage, so the proposed 21 GB operating-system partition must be increased before installation.
+
+## 5. NETWORK CONFIGURATION
+
+| Component | Configuration |
+|---|---|
+| Network Adapter | VMware Virtual Network Adapter |
+| Network Connection | Shared with my Mac |
+| Networking Mode | NAT (Network Address Translation) |
+
+The virtual machine shares the Mac's internet connection. VMware uses NAT to allow Windows to communicate with external networks through the host computer.
+
+## 6. SOFTWARE AND ADMINISTRATION TOOLS
+
+| Software / Tool | Purpose |
+|---|---|
+| macOS Monterey 12.7.6 | Host operating system |
+| VMware Fusion 12 | Virtualisation |
+| Windows 10 (64-bit) | Guest operating system |
+| DiskPart | Disk and partition management |
+| Command Prompt | Windows administration |
+| Visual Studio Code | Documentation editing |
+| Git and GitHub | Version control and documentation management |
+
+## 7. CONFIGURATION PURPOSE
+
+This virtualisation environment was established for completing practical activities in the System Administration Internship – Batch 02.
+
+It provides an environment for practising Windows installation, virtual machine management, disk partitioning, networking, system configuration and troubleshooting.
+
+## 8. CONFIGURATION VERIFICATION
+
+| Configuration Item | Status |
+|---|---|
+| Mac model | Verified |
+| macOS version | Verified |
+| Host RAM | Verified by user |
+| VMware Fusion version | Confirmed |
+| Virtual machine RAM | 4 GB |
+| Virtual processors | 2 |
+| Virtual disk capacity | 60 GB |
+| Firmware mode | Legacy BIOS |
+| Partition scheme | MBR |
+| Network mode | Shared with my Mac (NAT) |
+| Final Windows installation | success |
+
+**End of Configuration Documentation**
